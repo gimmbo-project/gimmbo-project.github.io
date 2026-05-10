@@ -1,9 +1,19 @@
 body {
   font-family: 'Noto Sans', sans-serif;
+  font-size: 16px !important;
 }
 
 h3 {
   font-weight: 900;
+}
+
+#author-table td {
+  font-size: 1.1em;
+  padding: 4px 12px;
+}
+
+#author-table sup {
+  font-size: 0.7em;
 }
 
 

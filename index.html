@@ -60,6 +60,32 @@
         </div>
     </div>
 
+    <div class="container" style="text-align: center; margin: 1.5em auto;">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline" style="display: inline-flex; gap: 12px; list-style: none; padding: 0; margin: 0; flex-wrap: wrap; justify-content: center;">
+                    <li>
+                        <a href="https://arxiv.org/abs/2601.18585" target="_blank"
+                           style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border:2px solid #333;border-radius:50px;text-decoration:none;color:#333;font-weight:600;font-size:1em;background:#fff;transition:background 0.2s,color 0.2s;">
+                            <i class="fa fa-file-text-o"></i> Arxiv
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/squidrice21/gimmbo" target="_blank"
+                           style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border:2px solid #333;border-radius:50px;text-decoration:none;color:#333;font-weight:600;font-size:1em;background:#fff;transition:background 0.2s,color 0.2s;">
+                            <i class="fa fa-github"></i> Code
+                        </a>
+                    </li>
+                    <li>
+                        <span style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border:2px solid #aaa;border-radius:50px;color:#aaa;font-weight:600;font-size:1em;background:#fff;cursor:default;">
+                            <i class="fa fa-puzzle-piece"></i> ComfyUI Node (Coming Soon)
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <!-- <script>
         document.getElementById('author-row').style.maxWidth = document.getElementById("title-row").clientWidth + 'px';
     </script> -->
@@ -160,6 +186,11 @@
                 <h3>
                     Extensions
                 </h3>
+                <h4>Scaling to Large Adapter Collections via Retrieval</h4>
+                <div class="text-center">
+                    <img src="./images/retrieval.png" class="img-responsive" style="margin: auto; width: 100%;">
+                    <p style="margin-top: 0.5em; font-size: 0.9em; text-align: left;">Real-world community adapter libraries far exceed the 20–30 dimensions GimmBO operates over. To bridge this gap, we integrate GimmBO with retrieval-based methods such as <a href="https://stylus-diffusion.github.io/" target="_blank">Stylus</a> [Luo et al. 2024], which automatically selects 20–30 relevant adapters for a given prompt from thousands of community-created options. Simply averaging the retrieved adapters yields weak, under-specified results. Stylus's own fine merging produces a single fixed output that is better aligned with the prompt, but with no room for user control. GimmBO enables users to interactively explore the merged space, generating results that are better aligned with the prompt and significantly diverse.</p>
+                </div>
                 <h4>Content Merging</h4>
                 <div class="text-center">
                     <img src="./images/extension_faces.png" class="img-responsive" style="margin: auto; width: 100%;">
@@ -193,6 +224,8 @@
                     <b>Seq. Gallery</b>: Koyama, Yuki, Issei Sato, and Masataka Goto. "Sequential gallery for interactive visual design optimization." ACM Transactions on Graphics (TOG) 39.4 (2020): 88-1.
                 <br>
                     <b>Seq. Slider</b>: Koyama, Yuki, et al. "Sequential line search for efficient visual design optimization by crowds." ACM Transactions on Graphics (TOG) 36.4 (2017): 1-11.
+                <br>
+                    <b>Stylus</b>: Luo, Michael, et al. "Stylus: Automatic adapter selection for diffusion models." Advances in Neural Information Processing Systems 37 (2024): 32888–32915. <a href="https://stylus-diffusion.github.io/" target="_blank">https://stylus-diffusion.github.io/</a>
                 <br>
                     
                     
